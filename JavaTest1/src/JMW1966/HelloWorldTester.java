@@ -1,11 +1,13 @@
 package JMW1966;
-
+/*
+ * This class is intended to test the functionality of the HelloWorld class
+ */
 public final class HelloWorldTester {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		HelloWorld hw = new HelloWorld(); 
+		HelloWorld hw = new HelloWorld(); // we have to crate a dynamic object to invoke the constructor
 
 	}
 
