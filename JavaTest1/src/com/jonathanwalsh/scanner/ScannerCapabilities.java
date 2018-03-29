@@ -39,4 +39,8 @@ public class ScannerCapabilities {
 		return 0;
 	}
 
+	// this is a BS method to show parameterized test in action 
+	public int adder(int a, int b) {
+		return a+b;
+	}
 }

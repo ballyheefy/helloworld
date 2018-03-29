@@ -1,8 +1,10 @@
-package com.jonathanwalsh.scanner;
+package ScannerTest;
 
 import java.util.Scanner;
 
 import org.junit.Test;
+
+import com.jonathanwalsh.scanner.ScannerCapabilities;
 
 import junit.framework.TestCase;
 
