@@ -5,13 +5,13 @@ package com.jonathanwalsh;
  * 
  * @author jonth
  * 
- * This is the start of the class for a router
+ * This is the start of the class for a router there is no such thing as a packet but my router application can deal with these generically 
  * 
  * TODO - need to understand how declare interfaces to this 
  *
  */
 
-public class Packet {
+public abstract class Packet {
 	
 	/*
 	 * Default constructor 
