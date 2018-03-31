@@ -1,4 +1,4 @@
-package JMW1966;
+package com.jonathanwalsh.jmw1966;
 
 
 

@@ -1,10 +1,9 @@
-package ScannerTest;
-
-import static org.junit.Assert.*;
+package com.jonathanwalsh.tester;
 
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -33,9 +32,10 @@ public class ScannerTestParam {
 	public static Collection<Object []> data() {
 		// These are the parameters that are passed every time the test is called 
 		Object datalist [][] = new Object [][] {
+			/* {val1, val2, expected sum} */
 			{2,2,4}, // 2+2 = 4
 			{2,3,5}, // 2+3 = 5
-			{4,1,8}  // 4+1 = 5 
+			{4,1,5}  // 4+1 = 5 
 		}; 
 		return Arrays.asList(datalist);
 	}
@@ -45,9 +45,14 @@ public class ScannerTestParam {
 		sc = new ScannerCapabilities();
 	}
 	
-	@Test
+	@After
+	public void cleanuptest() {
+		// perform any clean up needed 
+	}
+	
+	@Test(timeout=500)
 	/*
-	 * This function will run once per instance in the array datalist defined above 
+	 * This function will run once per instance in the array datalist defined above it is easy to add more tests by adding more tupples to the data list
 	 */
 	public void test() {
 		assert (expected == sc.adder(val1, val2));

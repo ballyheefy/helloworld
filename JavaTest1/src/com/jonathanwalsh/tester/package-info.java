@@ -5,4 +5,4 @@
  * @author jonth
  *
  */
-package ScannerTest;
+package com.jonathanwalsh.tester;

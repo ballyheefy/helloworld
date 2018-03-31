@@ -1,4 +1,7 @@
-package JMW1966;
+package com.jonathanwalsh.tester;
+
+import com.jonathanwalsh.jmw1966.HelloWorld;
+
 /*
  *
  * This class is intended to test the functionality of the HelloWorld class
